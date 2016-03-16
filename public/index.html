@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bork Bork Bork!</title>
+
+    <!-- Bootstrap core CSS -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body ng-app="bork">
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+
+
+          <div class="inner cover" ng-controller="FlooDerFloofen as vm">
+            <h1 class="cover-heading">Sey Hellu tu My Leettle-a Freeend!</h1>
+            <p class="lead">The chef is on the job.  Make it swedish.</p>
+            <textarea rows="4" cols="60" name="makeBork" placeholder="Make america great again" ng-model="vm.borkText"></textarea>
+            <p class="lead">
+              <a href="#" class="btn btn-lg btn-default" ng-click="vm.borkIt()">Bork!</a>
+            </p>
+            <div class="well" ng-show="vm.cheffed"><p ng-bind-html="vm.cheffed"></p></div>
+          </div>
+
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>

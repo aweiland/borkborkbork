@@ -1,0 +1,24 @@
+{
+  "name": "chef",
+  "version": "0.0.1",
+  "description": "Bork bork bork!",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rebelmail/node-lambda-template.git"
+  },
+  "author": "adub",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rebelmail/node-lambda-template/issues"
+  },
+  "homepage": "https://github.com/rebelmail/node-lambda-template",
+  "dependencies": {
+    "node-lambda": "0.1.5"
+  },
+  "scripts": {
+    "setup": "node-lambda setup",
+    "run": "node-lambda run",
+    "deploy": "node-lambda deploy"
+  }
+}
